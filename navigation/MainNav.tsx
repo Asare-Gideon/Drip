@@ -11,10 +11,10 @@ import { useAppSelector } from "../app/reduxHooks/hooks";
 import { Colors, Sizes } from "../constants/Layout";
 import { MainNavParams } from "../types";
 import CartsNav from "./CartsNav";
-import CategoryNav from "./categoryNav";
 import HomeNav from "./HomeNav";
 import ProfileNav from "./ProfileNav";
 import wishlistNav from "./wishlistNav";
+import CategoryNav from "./CategoryNav";
 
 const Tab = createBottomTabNavigator<MainNavParams>();
 

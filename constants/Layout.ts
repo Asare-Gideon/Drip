@@ -5,11 +5,11 @@ const height = Dimensions.get("window").height;
 
 export const Colors = {
   // base colors
-  primary: "#ff1d25", // red
+  primary: "#fa6e20", // red
   secondary: "#eb6c22",
 
   // colors
-  black: "#1E1F20",
+  black: "#121212",
   white: "#FFFFFF",
 
   lightGray: "#F5F5F6",
@@ -56,7 +56,7 @@ export const Fonts = {
     fontSize: Sizes.largeTitle,
     lineHeight: 55,
   },
-  h1: { fontFamily: "Archivo-Black", fontSize: Sizes.h1, lineHeight: 36 },
+  h1: { fontFamily: "Archivo-Black", fontSize: Sizes.h1, lineHeight: 38 },
   h2: { fontFamily: "Archivo-Bold", fontSize: Sizes.h2, lineHeight: 30 },
   h3: { fontFamily: "Archivo-Bold", fontSize: Sizes.h3, lineHeight: 22 },
   h4: { fontFamily: "Archivo-Bold", fontSize: Sizes.h4, lineHeight: 22 },

@@ -4,24 +4,20 @@ import images from "../constants/Images";
 import { Colors, Fonts, Sizes } from "../constants/Layout";
 
 interface swiperProp {
-  image: any;
   title: string;
   text: string;
 }
-const InitialSwiper = ({ image, title, text }: swiperProp) => {
+const InitialSwiper = ({ title, text }: swiperProp) => {
   const height = Dimensions.get("window").height;
   const smallScreen = height < 660;
 
   return (
     <View>
-      <View style={styles.imageCont}>
-        <Image source={image} style={styles.image} />
-      </View>
       <View>
         <Text
           style={[
             styles.headerText,
-            { fontSize: smallScreen ? 20 : 24, lineHeight: 30 },
+            { fontSize: smallScreen ? 20 : 26, lineHeight: 36 },
           ]}
         >
           {title}
@@ -42,14 +38,15 @@ const styles = StyleSheet.create({
     fontSize: 15,
     width: Sizes.width - 40,
     alignSelf: "center",
-    marginTop: 10,
+    marginTop: 8,
+    color: Colors.warmWhite,
   },
   headerText: {
-    ...Fonts.h1,
-    fontSize: 24,
+    ...Fonts.h2,
+    fontSize: 30,
     width: Sizes.width - 50,
     alignSelf: "center",
-    color: Colors.darkgray,
+    color: Colors.white,
     textAlign: "center",
   },
   imageCont: {
